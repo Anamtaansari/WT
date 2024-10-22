@@ -1,0 +1,28 @@
+<mat-toolbar>
+  <span>Weight Tracker App</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button (click)="openRegisterForm()" style="margin-right: 16px;">
+    Register
+   </button>
+  <button mat-raised-button (click)="openLoginForm()">
+   Login
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="b">
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">Dashboard</a>
+      <a mat-list-item routerLink="/goals">Your Goals</a>
+      <a mat-list-item routerLink="/profile">Profile</a>
+      <a mat-list-item routerLink="/settings">Settings</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- <router-outlet></router-outlet> -->
+

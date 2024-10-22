@@ -1,0 +1,25 @@
+.dashboard-container {
+    padding: 20px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-section {
+    margin-top: 20px;
+  }
+  
+  .progress-bar-container {
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 24px;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #E87C7C;
+    border-radius: 8px;
+    transition: width 0.5s ease;
+  }
+  

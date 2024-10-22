@@ -1,0 +1,56 @@
+<h2>Your Goals</h2>
+<form>
+  <div>
+    <label for="targetGoal">Target Goal</label>
+    <input type="text" id="targetGoal" name="targetGoal" [(ngModel)]="goal.targetGoal">
+  </div>
+
+  <div>
+    <label for="startWeight">Start Weight</label>
+    <input type="text" id="startWeight" name="startWeight" [(ngModel)]="goal.startWeight">
+  </div>
+
+  <div>
+    <label for="startDate">Start Date</label>
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="goal.startDate">
+  </div>
+
+  <div>
+    <label for="endDate">End Date</label>
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="goal.endDate">
+  </div>
+
+  <div>
+    <label for="status">Status</label>
+    <select id="status" name="status" [(ngModel)]="goal.status">
+      <option value="in progress">In Progress</option>
+      <option value="completed">Completed</option>
+      <option value="not started">Not Started</option>
+    </select>
+  </div>
+
+  <button type="submit" (click)="addGoal()">Add Goal</button>
+</form>
+
+<table class="goals-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Target Goal</th>
+      <th>Start Weight</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let g of goals; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ g.targetGoal }}</td>
+      <td>{{ g.startWeight }}</td>
+      <td>{{ g.startDate }}</td>
+      <td>{{ g.endDate }}</td>
+      <td>{{ g.status }}</td>
+    </tr>
+  </tbody>
+</table>

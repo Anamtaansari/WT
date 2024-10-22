@@ -1,0 +1,40 @@
+<!-- <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard">Dashboard</a>
+        <a mat-list-item routerLink="/goals">Your Goals</a>
+        <a mat-list-item routerLink="/profile">Profile</a>
+        <a mat-list-item routerLink="/settings">Settings</a>
+      </mat-nav-list>
+    </mat-sidenav> -->
+<div class="settings-container">
+    <h2>User Settings</h2>
+    <form (ngSubmit)="saveSettings()">
+      <div class="form-group">
+        <label for="notification">Enable Notifications:</label>
+        <input type="checkbox" id="notification" [(ngModel)]="settings.notification" name="notification">
+      </div>
+  
+      <div class="form-group">
+        <label for="privacy">Privacy Setting:</label>
+        <select id="privacy" [(ngModel)]="settings.privacy" name="privacy">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="theme">Theme:</label>
+        <select id="theme" [(ngModel)]="settings.theme" name="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+  
+      <button type="submit">Save Settings</button>
+    </form>
+  </div>
+  <!-- <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->

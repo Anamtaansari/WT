@@ -1,0 +1,50 @@
+.goals-container {
+    padding: 20px;
+    background-color: #F7F7F7;
+  }
+  
+  h2 {
+    color: #E87C7C;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #E87C7C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .goals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .goals-table th, .goals-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .goals-table th {
+    background-color: #E87C7C;
+    color: white;
+  }
+  

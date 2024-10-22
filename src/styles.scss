@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2E4E5B;
+    padding: 20px;
+    color: white;
+  }
+  
+  .sidebar h2 {
+    color: #E87C7C;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #F7F7F7;
+  }
+  
+  .goals-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .goals-table th, .goals-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .goals-table th {
+    background-color: #E87C7C;
+    color: white;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
