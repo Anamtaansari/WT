@@ -6,7 +6,7 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 import {merge} from 'rxjs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
+import { MatDialogRef } from '@angular/material/dialog'; // Import MatDialogRef
 
 @Component({
   selector: 'app-login',
@@ -22,7 +22,13 @@ export class LoginComponent {
 
   hide = true;
 
-  constructor() {
+  // constructor() {
+  //   merge(this.email.statusChanges, this.email.valueChanges)
+  //     .pipe(takeUntilDestroyed())
+  //     .subscribe(() => this.updateErrorMessage());
+  // }
+
+  constructor(private dialogRef: MatDialogRef<LoginComponent>) { // Inject MatDialogRef
     merge(this.email.statusChanges, this.email.valueChanges)
       .pipe(takeUntilDestroyed())
       .subscribe(() => this.updateErrorMessage());
@@ -37,4 +43,9 @@ export class LoginComponent {
       this.errorMessage = '';
     }
   }
+  
+  onCancel() {
+    this.dialogRef.close(); // Close the dialog
+  }
+
 }
