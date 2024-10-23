@@ -1,28 +1,32 @@
 <h2>Your Goals</h2>
 <form>
-  <div>
+  <div class="form-row">
+  <div class="form-group">
     <label for="targetGoal">Target Goal</label>
-    <input type="text" id="targetGoal" name="targetGoal" [(ngModel)]="goal.targetGoal">
+    <input type="text" id="targetGoal" name="targetGoal" [(ngModel)]="goal.targetGoal"  class="small-input">
   </div>
 
-  <div>
+  <div class="form-group">
     <label for="startWeight">Start Weight</label>
-    <input type="text" id="startWeight" name="startWeight" [(ngModel)]="goal.startWeight">
+    <input type="text" id="startWeight" name="startWeight" [(ngModel)]="goal.startWeight" class="small-input">
+  </div>
   </div>
 
-  <div>
+  <div class="form-row">
+  <div class="form-group">
     <label for="startDate">Start Date</label>
-    <input type="date" id="startDate" name="startDate" [(ngModel)]="goal.startDate">
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="goal.startDate" class="small-input">
   </div>
 
-  <div>
+  <div class="form-group">
     <label for="endDate">End Date</label>
-    <input type="date" id="endDate" name="endDate" [(ngModel)]="goal.endDate">
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="goal.endDate" class="small-input">
+  </div>
   </div>
 
-  <div>
+  <div class="form-group">
     <label for="status">Status</label>
-    <select id="status" name="status" [(ngModel)]="goal.status">
+    <select id="status" name="status" [(ngModel)]="goal.status" class="small-input">
       <option value="in progress">In Progress</option>
       <option value="completed">Completed</option>
       <option value="not started">Not Started</option>

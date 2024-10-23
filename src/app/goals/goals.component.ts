@@ -19,7 +19,29 @@ interface Goal {
   imports: [FormsModule, CommonModule] // Import FormsModule here
 })
 export class GoalsComponent {
-  goals: Goal[] = [];
+  goals: Goal[] = [
+    {
+      targetGoal: 'Lose 5kg',
+      startWeight: '70kg',
+      startDate: '2023-10-01',
+      endDate: '2023-12-01',
+      status: 'in progress'
+    },
+    {
+      targetGoal: 'Gain 3kg',
+      startWeight: '65kg',
+      startDate: '2023-08-15',
+      endDate: '2023-09-15',
+      status: 'completed'
+    },
+    {
+      targetGoal: 'Maintain Weight',
+      startWeight: '68kg',
+      startDate: '2023-09-01',
+      endDate: '2023-11-01',
+      status: 'not started'
+    }
+  ];
   goal: Goal = {
     targetGoal: '',
     startWeight: '',

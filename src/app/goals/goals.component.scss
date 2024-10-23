@@ -48,3 +48,16 @@
     color: white;
   }
   
+  .small-input {
+    width: 70%; /* Adjust this value to control how wide the input fields are */
+    max-width: 700px; /* Optionally set a max width */
+  }
+  .form-row {
+    display: flex;
+    gap: 20px; /* Adjust the spacing between the fields */
+    margin-bottom: 15px;
+  }
+  .form-group {
+    flex: 1; /* Allows the form fields to grow and take available space */
+    margin-bottom: 15px;
+  }
