@@ -9,50 +9,20 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+
+  // Default user data with more fields
   user = {
-    name: '',
-    email: '',
-    weight: '',
-    goals: ''
+    name: 'Jane Doe',
+    email: 'jane.doe@example.com',
+    phone: '123-456-7890',
+    address: '123 Main St, Anytown, USA',
+    bio: 'I am a software developer with a passion for learning new technologies.'
   };
 
-  constructor() {
-    // Mock data for user profile
-    this.user = {
-      name: 'John Doe',
-      email: 'john.doe@example.com',
-      weight: '70 kg',
-      goals: 'Lose 5 kg by the end of the month'
-    };
-  }
-
-  updateProfile() {
-    // Logic to update the profile goes here
-    console.log('Profile updated:', this.user);
+  // Function to save profile
+  saveProfile() {
+    alert(
+      `Profile saved!\nName: ${this.user.name}\nEmail: ${this.user.email}\nPhone: ${this.user.phone}\nAddress: ${this.user.address}\nBio: ${this.user.bio}`
+    );
   }
 }
-// export class ProfileComponent {
-//   profile: {
-//     target: string;
-//     startWeight: number;
-//     startDate: string;
-//     endDate: string;
-//     status: string;
-//   };
-
-//   constructor() {
-//     // Initialize the profile object
-//     this.profile = {
-//       target: '',
-//       startWeight: 0,
-//       startDate: '',
-//       endDate: '',
-//       status: 'active',
-//     };
-//   }
-
-//   updateProfile() {
-//     // Logic to update the profile (e.g., send to a server)
-//     console.log('Profile updated:', this.profile);
-//   }
-// }
