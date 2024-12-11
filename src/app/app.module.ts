@@ -14,6 +14,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 
 import { RouterModule, Routes } from '@angular/router'; // Import RouterModule and Routes
 import { GoalsComponent } from './goals/goals.component'; // Import the component
@@ -43,7 +44,8 @@ const routes: Routes = [
         MatNativeDateModule,
         RouterModule.forRoot(routes), // Add the routes to RouterModule
         MatSidenavModule,
-        MatListModule
+        MatListModule,
+        MatTableModule
     ],
     providers: [],
     exports: [],

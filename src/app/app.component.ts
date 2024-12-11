@@ -15,12 +15,13 @@ import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 // import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DashboardComponent, GoalsComponent, SettingsComponent, MatIconModule, MatToolbarModule, MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSidenavModule, MatListModule],
+  imports: [RouterOutlet, DashboardComponent, GoalsComponent, SettingsComponent, MatIconModule, MatToolbarModule, MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSidenavModule, MatListModule, MatTableModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
