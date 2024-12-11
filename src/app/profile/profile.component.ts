@@ -12,17 +12,18 @@ export class ProfileComponent {
 
   // Default user data with more fields
   user = {
-    name: 'Jane Doe',
+    fname: 'Jane',
+    lname: 'Doe',
     email: 'jane.doe@example.com',
     phone: '123-456-7890',
-    address: '123 Main St, Anytown, USA',
-    bio: 'I am a software developer with a passion for learning new technologies.'
+    // address: '123 Main St, Anytown, USA',
+    // bio: 'I am a software developer with a passion for learning new technologies.'
   };
 
   // Function to save profile
   saveProfile() {
     alert(
-      `Profile saved!\nName: ${this.user.name}\nEmail: ${this.user.email}\nPhone: ${this.user.phone}\nAddress: ${this.user.address}\nBio: ${this.user.bio}`
+      `Profile saved!\nFirst Name: ${this.user.fname}\nLast Name: ${this.user.lname}\nEmail: ${this.user.email}\nPhone: ${this.user.phone}`
     );
   }
 }
