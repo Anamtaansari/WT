@@ -7,33 +7,32 @@
         <a mat-list-item routerLink="/settings">Settings</a>
       </mat-nav-list>
     </mat-sidenav> -->
-<div class="settings-container">
-    <h2>User Settings</h2>
-    <form (ngSubmit)="saveSettings()">
-      <div class="form-group">
-        <label for="notification">Enable Notifications:</label>
-        <input type="checkbox" id="notification" [(ngModel)]="settings.notification" name="notification">
-      </div>
-  
-      <div class="form-group">
-        <label for="privacy">Privacy Setting:</label>
-        <select id="privacy" [(ngModel)]="settings.privacy" name="privacy">
-          <option value="public">Public</option>
-          <option value="private">Private</option>
-        </select>
-      </div>
-  
-      <div class="form-group">
-        <label for="theme">Theme:</label>
-        <select id="theme" [(ngModel)]="settings.theme" name="theme">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </div>
-  
-      <button type="submit">Save Settings</button>
-    </form>
-  </div>
+    <div class="settings-container">
+      <h2>User Settings</h2>
+      <form>
+        <button type="button" (click)="deleteUser()" class="delete-button">Delete Account</button>
+
+        <button type="button" (click)="logoutUser()">Log out</button>
+    
+      </form>
+    </div>
+    <style>
+      .settings-container {
+        margin: 20px;
+      }
+    
+      .settings-container button {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    
+      .delete-button {
+        background-color: red;
+        color: white;
+      }
+    </style>
   <!-- <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

@@ -21,4 +21,12 @@ export class SettingsComponent {
     // Logic to save settings goes here
     console.log('Settings saved:', this.settings);
   }
+
+  logoutUser() {
+    console.log("user logged out")
+  }
+
+  deleteUser() {
+    console.log("user is deleted")
+  }
 }
