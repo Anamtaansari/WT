@@ -3,8 +3,13 @@
 
   <!-- Display profile info -->
   <div>
-    <p><strong>Name:</strong></p>
-    <input type="text" [(ngModel)]="user.name" name="name" />
+    <p><strong>First Name:</strong></p>
+    <input type="text" [(ngModel)]="user.fname" name="fname" />
+  </div>
+
+  <div>
+    <p><strong>Last Name:</strong></p>
+    <input type="text" [(ngModel)]="user.lname" name="lname" />
   </div>
 
   <div>
@@ -16,16 +21,15 @@
     <p><strong>Phone:</strong></p>
     <input type="text" [(ngModel)]="user.phone" name="phone" />
   </div>
-
-  <div>
-    <p><strong>Address</strong></p>
+  <!-- <div>
+    <p><strong>Address:</strong></p>
     <input type="text" [(ngModel)]="user.address" name="address" />
   </div>
 
   <div>
     <p><strong>Bio:</strong></p>
     <textarea [(ngModel)]="user.bio" name="bio" rows="3"></textarea>
-  </div>
+  </div> -->
 
   <button (click)="saveProfile()">Save</button>
 </div>
